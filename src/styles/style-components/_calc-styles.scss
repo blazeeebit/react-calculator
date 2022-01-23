@@ -1,0 +1,57 @@
+.calculator-body {
+	border-radius: 25px;
+	overflow: hidden;
+	padding: 10px 15px;
+	background-color: $_Light_Pink;
+	opacity: 0;
+	animation: fadeUp 1s forwards;
+
+	&-screen {
+		border-radius: 25px;
+		background-color: $_Dark_Pink;
+
+		p {
+			font-size: 40px;
+			color: white;
+		}
+
+		h1 {
+			font-size: 120px;
+			color: $_Light_Pink;
+		}
+	}
+}
+
+.calculator-button-container {
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.keyboard-layout {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-auto-rows: 20%;
+	grid-column-gap: 5%;
+	grid-row-gap: 5%;
+}
+
+.btn-each {
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	color: $_Light_Black;
+	transition: 0.2s;
+
+	&:hover {
+		background-color: $_Dark_Pink;
+		color: $_Light_Pink;
+	}
+
+	p {
+		font-size: 50px;
+		font-weight: bold;
+	}
+}
